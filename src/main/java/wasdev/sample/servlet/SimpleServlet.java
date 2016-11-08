@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class SimpleServlet,Message
  */
 @WebServlet("/SimpleServlet")
-public class SimpleServlet extends HttpServlet {
+public class SimpleServlet extends HttpServlet  {
     private static final long serialVersionUID = 1L;
 
     /**
@@ -22,8 +22,10 @@ public class SimpleServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         Message m2=new  Message();
-        response.getWriter().print("Hello World test!"+m2.finResult);
-        m2.fun1();
+        boolean findResult=m2.finResult;
+        response.getWriter().print("Hello World!"+findResult);
+      
+        
         
     }
    
