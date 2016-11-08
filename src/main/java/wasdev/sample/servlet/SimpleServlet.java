@@ -23,5 +23,15 @@ public class SimpleServlet extends HttpServlet {
         response.setContentType("text/html");
         response.getWriter().print("Hello World!");
     }
+    
+    public static void main(String[] args) {
+ 		// TODO Auto-generated method stub
+ 		boolean finResult=false;
+ 		JUnitTest jtest= new JUnitTest();
+ 		finResult=jtest.testEvenOddNumber();
+ 		System.out.println("Result-->"+finResult);
+ 		
+
+ 	}
 
 }
