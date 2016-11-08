@@ -2,7 +2,7 @@ package wasdev.sample.servlet;
 
 public class Message {
 	
-	public String findResult;
+	public String finResult;
 
 
 	public void fun1(){
