@@ -22,8 +22,8 @@ public class SimpleServlet extends HttpServlet  {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         Message m2=new  Message();
-        boolean findResult=m2.finResult;
-        response.getWriter().print("Hello World!"+findResult);
+        
+        response.getWriter().print("Hello World!"+m2.finResult);
       
         
         
