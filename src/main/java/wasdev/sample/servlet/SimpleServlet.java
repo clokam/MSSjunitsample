@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SimpleServlet
+ * Servlet implementation class SimpleServlet,Message
  */
 @WebServlet("/SimpleServlet")
 public class SimpleServlet extends HttpServlet {
@@ -21,19 +21,10 @@ public class SimpleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
-         Message m2=new  Message();
-        response.getWriter().print("Hello World!");
+        Message m2=new  Message();
+        response.getWriter().print("Hello World!"+m2.findResult);
         m2.fun1();
+        
     }
-    
-    public static void main(String[] args) {
- 		// TODO Auto-generated method stub
- 		boolean finResult=false;
- 		JUnitTest jtest= new JUnitTest();
- 		finResult=jtest.testEvenOddNumber();
- 		System.out.println("Result-->"+finResult);
- 		
-
- 	}
-
+   
 }
