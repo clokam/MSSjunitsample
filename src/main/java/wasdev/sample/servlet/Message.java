@@ -12,7 +12,7 @@ public class Message {
 //	finResult = result;
 //}
 	
-public static void main(String[] args) {
+public static void main(String[] args)throws InvalidNumberException {
 		// TODO Auto-generated method stub
 		boolean finResult=false;
 		JUnitTest jtest= new JUnitTest();
@@ -22,15 +22,8 @@ public static void main(String[] args) {
 		{
 			System.out.println("Success ");	
 		}else{
-			try {
-				throw new Exception("fail");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
+				throw new InvalidNumberException("fail");		
 		}
-		
-
 	}
-	
 }
