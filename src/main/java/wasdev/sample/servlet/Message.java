@@ -30,8 +30,9 @@ public  boolean getFinalResult(){ //throws InvalidNumberException {
 	System.out.println("result "+finResult);	
 	return finResult;
 	}
-}
-
-public String getMessage(){
+	public String getMessage(){
 	return "Chanakya!";
 }
+}
+
+
