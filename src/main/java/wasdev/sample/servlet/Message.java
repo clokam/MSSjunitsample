@@ -31,3 +31,7 @@ public  boolean getFinalResult(){ //throws InvalidNumberException {
 	return finResult;
 	}
 }
+
+public String getMessage(){
+	return "Chanakya!";
+}
