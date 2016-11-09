@@ -2,15 +2,15 @@ package wasdev.sample.servlet;
 
 public class Message {
 	
-	public boolean finResult;
+	public static  boolean finResult;
 
-Message(boolean result){
-	finResult = result;
-}
+
 	public void fun1(){
 		System.out.println("Hiiii");
 	}
-
+Message(boolean result){
+	finResult = result;
+}
 	
 public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -27,4 +27,5 @@ public static void main(String[] args) throws Exception {
 		
 
 	}
+	
 }
