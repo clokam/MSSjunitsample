@@ -27,5 +27,6 @@ public static boolean getFinalResult()throws InvalidNumberException {
 			
 				throw new InvalidNumberException("fail");		
 		}
+	return finResult;
 	}
 }
