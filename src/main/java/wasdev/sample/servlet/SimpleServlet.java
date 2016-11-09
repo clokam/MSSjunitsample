@@ -24,7 +24,7 @@ public class SimpleServlet extends HttpServlet  {
         Message m2=new  Message();
         boolean result=false;
         result =m2.getFinalResult();
-        response.getWriter().print("Hello World!"+result+ m2.a);
+        response.getWriter().print("Hello World!"+result);
       
         
         
