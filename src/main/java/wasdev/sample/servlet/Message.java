@@ -19,7 +19,7 @@ public  boolean getFinalResult(){ //throws InvalidNumberException {
 		JUnitTest jtest= new JUnitTest();
 		finResult=jtest.testEvenOddNumber();
 		a = "xyz" ;
-		System.out.println("Result-->"+finResult+a);
+		System.out.println("Result-->"+finResult);
 		if(finResult)
 		{
 			System.out.println("Success ");	
