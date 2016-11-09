@@ -60,47 +60,12 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <configuration>
-                        <failOnMissingWebXml>false</failOnMissingWebXml>
-                        <warName>JavaHelloWorldApp</warName>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>net.wasdev.wlp.maven.plugins</groupId>
-                    <artifactId>liberty-maven-plugin</artifactId>
-                    <version>1.1</version>
-                </plugin>
+                
                 
                 <!--  -->
                 
-                	<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.4</version>
-				<configuration>
-					<parallel>classes</parallel>
-					<threadCount>20</threadCount>
-					<redirectTestOutputToFile>true</redirectTestOutputToFile>
-				</configuration>
-			</plugin>
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<mainClass>wasdev.sample.servlet.Message</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-				</configuration>
-				
-			</plugin>
+                	
+			
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -115,7 +80,7 @@
 			
 			
 			
-			
+		 <!-- -->	
 			
 			<plugin>
        <groupId>org.codehaus.mojo</groupId>
@@ -144,18 +109,7 @@
                 
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>net.wasdev.wlp.maven.plugins</groupId>
-                <artifactId>liberty-maven-plugin</artifactId>
-                <configuration>
-                    <configFile>src/main/wlp/server.xml</configFile>
-                    <bootstrapProperties>
-                        <appLocation>../../../../../${project.build.finalName}</appLocation>
-                    </bootstrapProperties>
-                </configuration>
-            </plugin>
-        </plugins>
+        
     </build>
     
     
