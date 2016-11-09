@@ -1,4 +1,4 @@
-package test.java.com.miracle.selenium;
+package com.miracle.selenium;
 
 import java.io.File;
 import java.io.PrintWriter;
