@@ -9,9 +9,9 @@ public class Message {
 	public void fun1(){
 		System.out.println("Hiiii");
 	}
-Message(boolean result){
-	finResult = result;
-}
+//Message(boolean result){
+//	finResult = result;
+//}
 	
 public static void main(String[] args)throws InvalidNumberException {
 		// TODO Auto-generated method stub
