@@ -12,7 +12,7 @@ public class JUnitTest {
     public boolean testEvenOddNumber() {
     	boolean result=false;
         Utility meo = new Utility();
-        value=18;
+        value=17;
         try{
         assertEquals("10 is a even number", true, meo.isEvenNumber(value));
        result= true;
