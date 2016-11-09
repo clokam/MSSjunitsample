@@ -18,7 +18,8 @@ public static void main(String[] args)throws InvalidNumberException {
 		boolean finResult=false;
 		JUnitTest jtest= new JUnitTest();
 		finResult=jtest.testEvenOddNumber();
-		System.out.println("Result-->"+finResult);
+		a = "xyz" ;
+		System.out.println("Result-->"+finResult+a);
 		if(finResult)
 		{
 			System.out.println("Success ");	
