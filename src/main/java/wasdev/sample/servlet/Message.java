@@ -3,6 +3,7 @@ package wasdev.sample.servlet;
 public class Message {
 	
 	public static  boolean finResult;
+	public static  boolean finResult1;
 
 
 	public void fun1(){
