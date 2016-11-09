@@ -2,7 +2,7 @@ package wasdev.sample.servlet;
 
 public class Message {
 	
-	//public static  boolean finResult;
+	public static  boolean finResult;
 	//public static  boolean finResult1;
 	//public static String a = "Miracle";
 
