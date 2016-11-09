@@ -103,7 +103,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.miracle.selenium.SeleniumRun</mainClass>
+							<mainClass>test.java.com.miracle.selenium</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
