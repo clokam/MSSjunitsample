@@ -178,6 +178,32 @@
                 </configuration>
             </plugin>
         </plugins>
+	    
+	    
+	    
+	    <plugins>
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+            <execution>
+                <id>MyTestApp_A</id>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+                <configuration>
+                    <mainClass>swasdev.sample.servlet.Message</mainClass>
+                    <includePluginDependencies>false</includePluginDependencies>
+                </configuration>
+            </execution>
+           
+        </executions>
+    </plugin>
+</plugins>
+	    
+	    
+	    
     </build>
     
     
