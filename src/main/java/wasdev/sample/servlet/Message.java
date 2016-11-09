@@ -12,18 +12,23 @@ public class Message {
 //	finResult = result;
 //}
 	
-public static void main(String[] args) throws Exception {
+public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		boolean finResult=false;
 		JUnitTest jtest= new JUnitTest();
 		finResult=jtest.testEvenOddNumber();
 		System.out.println("Result-->"+finResult);
-		if(finResult=="true")
-			{
-				System.out.println("Success ");	
-			}else{
+		if(finResult)
+		{
+			System.out.println("Success ");	
+		}else{
+			try {
 				throw new Exception("fail");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+		}
 		
 
 	}
