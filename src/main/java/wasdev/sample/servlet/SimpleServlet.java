@@ -23,7 +23,7 @@ public class SimpleServlet extends HttpServlet  {
         response.setContentType("text/html");
         Message m2=new  Message();
         
-        response.getWriter().print("Hello World!"+m2.finResult1);
+        response.getWriter().print("Hello World!"+m2.finResult1+ m2.a);
       
         
         
