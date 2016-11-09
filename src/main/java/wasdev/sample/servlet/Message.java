@@ -12,13 +12,18 @@ Message(boolean result){
 	}
 
 	
-public static void main(String[] args) {
+public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		boolean finResult=false;
 		JUnitTest jtest= new JUnitTest();
 		finResult=jtest.testEvenOddNumber();
 		System.out.println("Result-->"+finResult);
-		
+		if(finResult)
+			{
+				System.out.println("Success ");	
+			}else{
+				throw new Exception("fail");
+			}
 		
 
 	}
