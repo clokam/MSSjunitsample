@@ -18,7 +18,7 @@ public static void main(String[] args) throws Exception {
 		JUnitTest jtest= new JUnitTest();
 		finResult=jtest.testEvenOddNumber();
 		System.out.println("Result-->"+finResult);
-		if(finResult)
+		if(finResult=="true")
 			{
 				System.out.println("Success ");	
 			}else{
