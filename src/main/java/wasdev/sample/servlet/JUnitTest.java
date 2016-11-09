@@ -16,7 +16,7 @@ public class JUnitTest {
         try{
         assertEquals("10 is a even number", true, meo.isEvenNumber(value));
        result= true;
-		if(result=="true")
+		if(result)
 			{
 				System.out.println("Success ");	
 			}else{
