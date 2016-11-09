@@ -13,7 +13,7 @@ public class Message {
 //	finResult = result;
 //}
 	
-public  boolean getFinalResult()throws InvalidNumberException {
+public  boolean getFinalResult(){ //throws InvalidNumberException {
 		// TODO Auto-generated method stub
 		boolean finResult=false;
 		JUnitTest jtest= new JUnitTest();
@@ -25,7 +25,7 @@ public  boolean getFinalResult()throws InvalidNumberException {
 			System.out.println("Success ");	
 		}else{
 			
-				throw new InvalidNumberException("fail");		
+				//throw new InvalidNumberException("fail");		
 		}
 	System.out.println("result "+finResult);	
 	return finResult;
